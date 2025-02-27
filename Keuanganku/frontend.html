@@ -10,18 +10,18 @@
 <div class="container mt-4">
     <h2>Pencatatan Keuangan</h2>
     <form id="formTransaksi">
-        <label>Tanggal:</label>
-        <input type="date" id="tanggal" class="form-control">
-        <label>Jenis:</label>
+        <label for="tanggal">Tanggal:</label>
+        <input type="date" id="tanggal" class="form-control" required>
+        <label for="jenis">Jenis:</label>
         <select id="jenis" class="form-control">
             <option value="Pemasukan">Pemasukan</option>
             <option value="Pengeluaran">Pengeluaran</option>
         </select>
-        <label>Keterangan:</label>
-        <input type="text" id="keterangan" class="form-control">
-        <label>Jumlah:</label>
-        <input type="number" id="jumlah" class="form-control">
-        <label>Rekening:</label>
+        <label for="keterangan">Keterangan:</label>
+        <input type="text" id="keterangan" class="form-control" placeholder="Contoh:Gaji,Makan" required>
+        <label for="jumlah">Jumlah:</label>
+        <input type="number" id="jumlah" class="form-control" placehorder="Masukan jumlah" required>
+        <label for="rekening">Rekening:</label>
         <select id="rekening" class="form-control">
             <option value="BRImo">BRImo</option>
             <option value="SeaBank">SeaBank</option>
